@@ -1,42 +1,20 @@
+import React from "react";
 const YourComponent = () => {
+  const dailySalesData = {
+    labels: ["Red", "Blue", "Yellow"],
+    datasets: [
+      {
+        data: [300, 50, 100],
+        backgroundColor: ["red", "blue", "yellow"],
+      },
+    ],
+  };
   return (
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 mb-6 ">
       <div className="card">
         <div className="p-5  bg-white">
           <div className="flex justify-between items-center">
             <h4 className="card-title mb-4">Daily Sales</h4>
-
-            <div className="relative">
-              <button
-                className="text-lg text-gray-600 p-2"
-                data-fc-placement="left-start"
-                data-fc-type="dropdown"
-                type="button"
-              >
-                <i className="mdi mdi-dots-vertical"></i>
-              </button>
-
-              <div className="hidden z-10 bg-white w-44 shadow rounded border p-2 transition-all duration-300 fc-dropdown-open:translate-y-0 translate-y-3">
-                <a
-                  className="flex items-center py-1.5 px-3.5 rounded text-sm transition-all duration-300 bg-transparent text-gray-800 hover:bg-stone-100"
-                  href="javascript:void(0)"
-                >
-                  Action
-                </a>
-                <a
-                  className="flex items-center py-1.5 px-3.5 rounded text-sm transition-all duration-300 bg-transparent text-gray-800 hover:bg-gray-100"
-                  href="javascript:void(0)"
-                >
-                  Another action
-                </a>
-                <a
-                  className="flex items-center py-1.5 px-3.5 rounded text-sm transition-all duration-300 bg-transparent text-gray-800 hover:bg-gray-100"
-                  href="javascript:void(0)"
-                >
-                  Something else here
-                </a>
-              </div>
-            </div>
           </div>
 
           <div

@@ -38,7 +38,10 @@ const SideNav = () => {
           <li className="menu-item">
             <a href="/" className="menu-link waves-effect">
               <span className="menu-icon">
-                <i className="ph-duotone ph-house"></i>
+                <i
+                  className="ph-duotone ph-house"
+                  style={{ color: "#007bff" }}
+                ></i>
               </span>
               <span className="menu-text"> Dashboard </span>
               <span className="badge bg-primary rounded ms-auto">01</span>
@@ -48,7 +51,10 @@ const SideNav = () => {
           <li className="menu-item">
             <a href="calendar.html" className="menu-link waves-effect">
               <span className="menu-icon">
-                <i className="ph-duotone ph-calendar"></i>
+                <i
+                  className="ph-duotone ph-calendar"
+                  style={{ color: "#28a745" }}
+                ></i>
               </span>
               <span className="menu-text"> Calendar </span>
             </a>
@@ -59,7 +65,10 @@ const SideNav = () => {
           <li className="menu-item hover:bg-gray-100">
             <a href="/CSVupload" className="menu-link waves-effect">
               <span className="menu-icon">
-                <i className="ph-duotone ph-upload"></i>
+                <i
+                  className="ph-duotone ph-upload"
+                  style={{ color: "#6610f2" }}
+                ></i>
               </span>
               <span className="menu-text"> CSV Upload </span>
             </a>
@@ -67,7 +76,10 @@ const SideNav = () => {
           <li className="menu-item hover:bg-gray-100">
             <a href="/channel" className="menu-link waves-effect">
               <span className="menu-icon">
-                <i className="ph-duotone ph-list"></i>
+                <i
+                  className="ph-duotone ph-list"
+                  style={{ color: "#dc3545" }}
+                ></i>
               </span>
               <span className="menu-text"> Channel </span>
             </a>
@@ -75,7 +87,10 @@ const SideNav = () => {
           <li className="menu-item hover:bg-gray-100">
             <a href="/payment" className="menu-link waves-effect">
               <span className="menu-icon">
-                <i className="ph-duotone ph-credit-card"></i>
+                <i
+                  className="ph-duotone ph-credit-card"
+                  style={{ color: "#ffc107" }}
+                ></i>
               </span>
               <span className="menu-text"> Payment </span>
             </a>
@@ -83,17 +98,12 @@ const SideNav = () => {
           <li className="menu-item hover:bg-gray-100">
             <a href="/invoice" className="menu-link waves-effect">
               <span className="menu-icon">
-                <i className="ph-duotone ph-file"></i>
+                <i
+                  className="ph-duotone ph-file"
+                  style={{ color: "#20c997" }}
+                ></i>
               </span>
               <span className="menu-text"> Invoice </span>
-            </a>
-          </li>
-          <li className="menu-item hover:bg-gray-100">
-            <a href="/report" className="menu-link waves-effect">
-              <span className="menu-icon">
-                <i className="ph-duotone ph-chart-pie"></i>
-              </span>
-              <span className="menu-text"> Report </span>
             </a>
           </li>
           <li className="menu-item hover:bg-gray-100">
@@ -103,7 +113,10 @@ const SideNav = () => {
               className="menu-link waves-effect"
             >
               <span className="menu-icon">
-                <i className="ph-duotone ph-users"></i>
+                <i
+                  className="ph-duotone ph-users"
+                  style={{ color: "#6c757d" }}
+                ></i>
               </span>
               <span className="menu-text"> Staff </span>
               <span className="menu-arrow"></span>
@@ -131,7 +144,10 @@ const SideNav = () => {
               className="menu-link waves-effect"
             >
               <span className="menu-icon">
-                <i className="ph-duotone ph-file"></i>
+                <i
+                  className="ph-duotone ph-file"
+                  style={{ color: "#17a2b8" }}
+                ></i>
               </span>
               <span className="menu-text"> Settings </span>
               <span className="menu-arrow"></span>
