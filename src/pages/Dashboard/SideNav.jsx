@@ -157,4 +157,5 @@ const SideNav = () => {
     </div>
   );
 };
+
 export default SideNav;

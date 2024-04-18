@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Register from "./pages/Registeer/Register";
 import SideNav from "./pages/Dashboard/SideNav";
 import RecoverPassword from "./pages/RecoverPwd/RecoverPassword";
+import Header from "./pages/Header/Header";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/sidebar" element={<SideNav />} />
         <Route path="/recover" element={<RecoverPassword />} />
+        <Route path="/header" element={<Header />} />
         {/* Add more routes here */}
       </Routes>
     </Router>
