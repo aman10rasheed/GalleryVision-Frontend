@@ -1,13 +1,6 @@
-import React, { useState } from "react";
-import SideNav from "../Dashboard/SideNav";
+import React from "react";
 
-const SIdebarToggler = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
+const SIdebarToggler = ({ toggleSidebar }) => {
   return (
     <div>
       <button
@@ -20,7 +13,6 @@ const SIdebarToggler = () => {
           <i className="ph ph-list text-2xl"></i>
         </span>
       </button>
-      {isSidebarOpen && <SideNav />}
     </div>
   );
 };

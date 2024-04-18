@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import SideNav from "../Dashboard/SideNav";
 import Header from "../Header/Header";
-import TotalRevenue from "./TotalRevenue";
-import TotalChaneel from "./TotalChannel";
-import TotalCommission from "./TotalCommission";
 
-const Dashboard = () => {
+const Report = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -27,14 +24,10 @@ const Dashboard = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3 2xl:gap-7.5">
-          <TotalRevenue />
-          <TotalChaneel />
-          <TotalCommission />
-        </div>
+        <div className="">Report</div>
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default Report;

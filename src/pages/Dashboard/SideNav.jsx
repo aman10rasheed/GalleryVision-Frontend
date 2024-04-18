@@ -4,16 +4,18 @@ const SideNav = () => {
   const [showExtraPages, setShowExtraPages] = useState(false);
   const [showStaffMenu, setShowStaffMenu] = useState(false);
 
-  const toggleStaffMenu = () => {
+  const toggleStaffMenu = (e) => {
+    e.preventDefault();
     setShowStaffMenu(!showStaffMenu);
   };
 
-  const toggleExtraPages = () => {
+  const toggleExtraPages = (e) => {
+    e.preventDefault();
     setShowExtraPages(!showExtraPages);
   };
 
   return (
-    <div className="app-menu">
+    <div className="app-menu text-black">
       {/* Brand Logo */}
       <a href="index.html" className="logo-box">
         <img
@@ -34,7 +36,7 @@ const SideNav = () => {
           <li className="menu-title">Menu</li>
 
           <li className="menu-item">
-            <a href="index.html" className="menu-link waves-effect">
+            <a href="/" className="menu-link waves-effect">
               <span className="menu-icon">
                 <i className="ph-duotone ph-house"></i>
               </span>
@@ -55,7 +57,7 @@ const SideNav = () => {
           <li className="menu-title">Custom</li>
 
           <li className="menu-item hover:bg-gray-100">
-            <a href="javascript:void(0)" className="menu-link waves-effect">
+            <a href="/CSVupload" className="menu-link waves-effect">
               <span className="menu-icon">
                 <i className="ph-duotone ph-upload"></i>
               </span>
@@ -63,7 +65,7 @@ const SideNav = () => {
             </a>
           </li>
           <li className="menu-item hover:bg-gray-100">
-            <a href="javascript:void(0)" className="menu-link waves-effect">
+            <a href="/channel" className="menu-link waves-effect">
               <span className="menu-icon">
                 <i className="ph-duotone ph-list"></i>
               </span>
@@ -71,7 +73,7 @@ const SideNav = () => {
             </a>
           </li>
           <li className="menu-item hover:bg-gray-100">
-            <a href="javascript:void(0)" className="menu-link waves-effect">
+            <a href="/payment" className="menu-link waves-effect">
               <span className="menu-icon">
                 <i className="ph-duotone ph-credit-card"></i>
               </span>
@@ -79,7 +81,7 @@ const SideNav = () => {
             </a>
           </li>
           <li className="menu-item hover:bg-gray-100">
-            <a href="javascript:void(0)" className="menu-link waves-effect">
+            <a href="/invoice" className="menu-link waves-effect">
               <span className="menu-icon">
                 <i className="ph-duotone ph-file"></i>
               </span>
@@ -87,7 +89,7 @@ const SideNav = () => {
             </a>
           </li>
           <li className="menu-item hover:bg-gray-100">
-            <a href="javascript:void(0)" className="menu-link waves-effect">
+            <a href="/report" className="menu-link waves-effect">
               <span className="menu-icon">
                 <i className="ph-duotone ph-chart-pie"></i>
               </span>
@@ -96,7 +98,7 @@ const SideNav = () => {
           </li>
           <li className="menu-item hover:bg-gray-100">
             <a
-              href="javascript:void(0)"
+              href=""
               onClick={toggleStaffMenu}
               className="menu-link waves-effect"
             >
@@ -124,7 +126,7 @@ const SideNav = () => {
           </li>
           <li className="menu-item hover:bg-gray-100">
             <a
-              href="javascript:void(0)"
+              href=""
               onClick={toggleExtraPages}
               className="menu-link waves-effect"
             >
@@ -150,8 +152,6 @@ const SideNav = () => {
               </li>
             </ul>
           </li>
-
-          {/* Add other menu items and submenus similarly */}
         </ul>
       </div>
     </div>

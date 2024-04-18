@@ -1,9 +1,8 @@
+// Header.js
 import React from "react";
-import SideNav from "../Dashboard/SideNav";
 import Profile from "./Profile";
-import SIdebarToggler from "./SIdebarToggler";
 
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
@@ -26,7 +25,16 @@ const Header = () => {
       </a>
 
       {/* Sidenav Menu Toggle Button */}
-      <SIdebarToggler />
+      <button
+        onClick={toggleSidebar}
+        id="button-toggle-menu"
+        className="nav-link p-2 waves-effect me-auto"
+      >
+        <span className="sr-only">Menu Toggle Button</span>
+        <span className="flex items-center justify-center h-6 w-6">
+          <i className="ph ph-list text-2xl"></i>
+        </span>
+      </button>
 
       {/* Profile Dropdown Button, Fullscreen Toggle Button, and Topbar Search */}
       <div className="md:flex items-center relative">

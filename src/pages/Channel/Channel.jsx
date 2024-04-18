@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import SideNav from "../Dashboard/SideNav";
 import Header from "../Header/Header";
-import TotalRevenue from "./TotalRevenue";
-import TotalChaneel from "./TotalChannel";
-import TotalCommission from "./TotalCommission";
+import CreateChannel from "./CreateChannel";
 
-const Dashboard = () => {
+const Channel = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -27,14 +25,14 @@ const Dashboard = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3 2xl:gap-7.5">
-          <TotalRevenue />
-          <TotalChaneel />
-          <TotalCommission />
+        <div className="">
+          <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+            Button
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default Channel;
