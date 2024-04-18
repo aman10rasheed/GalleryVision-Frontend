@@ -3,10 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TotalCommission = () => {
   return (
-    <div className="rounded-lg border border-stroke bg-white py-6 px-7 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="rounded-lg border border-stroke bg-blue-gray-100 py-6 px-7 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div className="flex h-11 w-11 items-center justify-center rounded-full bg-meta-10 dark:bg-gray-200">
         {/* Increase icon size by setting size prop and change color using className */}
-        <FontAwesomeIcon icon={faHandHoldingDollar} size="3x" className="text-blue-500" />
+        <FontAwesomeIcon
+          icon={faHandHoldingDollar}
+          size="3x"
+          className="text-blue-500"
+        />
       </div>
 
       <div className="mt-4 flex items-end justify-between">

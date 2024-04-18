@@ -33,14 +33,17 @@ const CSVupload = () => {
         <SideNav />
       </div>
       {/* Main Content */}
-      <div className="md:w-full relative">
+      <div className="md:w-full  relative">
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
-          <div className="flex flex-col md:flex-row gap-6">
+        <h1 className="bg-gray-300 text-xl font-extrabold p-2 border-none">
+          Upload CSV
+        </h1>
+        <div className="flex items-center justify-center min-h-screen bg-gray-300">
+          <div className="flex flex-col  md:flex-row gap-6">
             {/* Channel CSV Upload */}
-            <div className="bg-white shadow-md rounded-lg p-8 flex flex-col items-center">
+            <div className="bg-blue-gray-100 shadow-md rounded-lg p-8 flex flex-col items-center">
               <div className="mb-4">
                 <FontAwesomeIcon
                   icon={faFileCsv}
@@ -62,7 +65,7 @@ const CSVupload = () => {
             </div>
 
             {/* Music CSV Upload */}
-            <div className="bg-white shadow-md rounded-lg p-8 flex flex-col items-center">
+            <div className="bg-blue-gray-100 shadow-md rounded-lg p-8 flex flex-col items-center">
               <div className="mb-4">
                 <FontAwesomeIcon
                   icon={faFileCsv}

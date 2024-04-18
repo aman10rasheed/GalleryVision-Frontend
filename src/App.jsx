@@ -8,7 +8,7 @@ import RecoverPassword from "./pages/RecoverPwd/RecoverPassword";
 import Header from "./pages/Header/Header";
 import CSVupload from "./pages/Upload/CSVupload";
 import Channel from "./pages/Channel/Channel";
-// import Payment from "./pages/Payment/Payment";
+import Payment from "./pages/Payment/Payment";
 import Invoice from "./pages/Invoice/Invoice";
 import Report from "./pages/Report/Report";
 import Settings from "./pages/Settings/Settings";
@@ -25,7 +25,7 @@ function App() {
         <Route path="/header" element={<Header />} />
         <Route path="/CSVupload" element={<CSVupload />} />
         <Route path="/channel" element={<Channel />} />
-        {/* <Route path="/payment" element={<Payment />} /> */}
+        <Route path="/payment" element={<Payment />} />
         <Route path="/invoice" element={<Invoice />} />
         <Route path="/report" element={<Report />} />
         <Route path="/settings" element={<Settings />} />

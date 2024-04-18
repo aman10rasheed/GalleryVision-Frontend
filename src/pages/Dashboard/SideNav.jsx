@@ -15,7 +15,7 @@ const SideNav = () => {
   };
 
   return (
-    <div className="app-menu text-black">
+    <div className="app-menu text-black bg-blue-gray-100 border-none">
       {/* Brand Logo */}
       <a href="index.html" className="logo-box">
         <img

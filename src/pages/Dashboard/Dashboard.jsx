@@ -29,6 +29,7 @@ const Dashboard = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
+        <h1 className="bg-gray-300 text-xl font-extrabold p-2">Dashboard</h1>
         <div className="bg-gray-300">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-6 p-5">
             <TotalRevenue />
