@@ -25,12 +25,12 @@ const TotalChaneel = () => {
             fill=""
           />
         </svg> */}
-        <FontAwesomeIcon icon={faUsers} />
+        <FontAwesomeIcon icon={faUsers} size="3x" className="text-red-700" />
       </div>
 
       <div className="mt-4 flex items-end justify-between">
         <div>
-          <h4 className="text-title-md font-bold text-black ">3.456</h4>
+          <h4 className="text-title-md text-lg font-bold text-black ">3.456</h4>
           <span className="text-sm font-medium text-gray-400">
             Total Channels
           </span>

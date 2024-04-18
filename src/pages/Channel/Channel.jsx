@@ -25,10 +25,8 @@ const Channel = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <div className="">
-          <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
-            Button
-          </button>
+        <div className=" flex flex-col p-4">
+          <CreateChannel />
         </div>
       </div>
     </div>

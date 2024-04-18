@@ -25,6 +25,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "apexcharts": "3.27.2",
     "dayjs": "^1.11.5",
+    "formik": "^2.4.5",
     "fullcalendar": "^6.1.6",
     "gmaps": "^0.4.25",
     "inputmask": "^5.0.7",
@@ -43,7 +44,8 @@
     "react-router-dom": "^6.22.3",
     "simplebar": "^5.3.9",
     "sweetalert2": "^11.5.1",
-    "swiper": "^8.4.4"
+    "swiper": "^8.4.4",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
