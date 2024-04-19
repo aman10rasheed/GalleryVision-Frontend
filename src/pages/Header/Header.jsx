@@ -1,4 +1,3 @@
-// Header.js
 import React from "react";
 import Profile from "./Profile";
 
@@ -28,7 +27,7 @@ const Header = ({ toggleSidebar }) => {
       <button
         onClick={toggleSidebar}
         id="button-toggle-menu"
-        className="nav-link p-2 waves-effect me-auto"
+        className="nav-link p-2 rounded-full bg-white hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition-colors duration-200 ease-in-out"
       >
         <span className="sr-only">Menu Toggle Button</span>
         <span className="flex items-center justify-center h-6 w-6">
@@ -41,11 +40,11 @@ const Header = ({ toggleSidebar }) => {
         {/* Topbar Search */}
         <div className="relative">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-            <i className="ph ph-magnifying-glass text-base"></i>
+            <i className="ph ph-magnifying-glass text-base text-gray-400"></i>
           </div>
           <input
             type="search"
-            className="form-input px-8 rounded-full bg-gray-500/10 border-transparent focus:border-transparent"
+            className="form-input px-8 rounded-full bg-gray-100/50 border-transparent focus:border-transparent focus:ring-2 focus:ring-blue-500"
             placeholder="Search..."
           />
         </div>
@@ -60,7 +59,7 @@ const Header = ({ toggleSidebar }) => {
           <button
             onClick={toggleFullscreen}
             type="button"
-            className="nav-link p-2 waves-effect"
+            className="nav-link p-2 rounded-full bg-white hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition-colors duration-200 ease-in-out"
           >
             <span className="sr-only">Fullscreen Mode</span>
             <span className="flex items-center justify-center h-6 w-6">

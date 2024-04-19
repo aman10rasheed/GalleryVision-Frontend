@@ -12,6 +12,7 @@ import Payment from "./pages/Payment/Payment";
 import Invoice from "./pages/Invoice/Invoice";
 import Report from "./pages/Report/Report";
 import Settings from "./pages/Settings/Settings";
+import Tax from "./pages/Tax/Tax";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/invoice" element={<Invoice />} />
         <Route path="/report" element={<Report />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/tax" element={<Tax />} />
         {/* Add more routes here */}
       </Routes>
     </Router>

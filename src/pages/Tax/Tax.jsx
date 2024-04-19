@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import SideNav from "../Dashboard/SideNav";
 import Header from "../Header/Header";
-import ChannelTable from "./ChannelTable";
-import ChannelHandler from "./ChannelHandler";
+import TaxList from "./TaxList";
+import TaxHeader from "./TaxHandler";
 
-const Channel = () => {
+const Tax = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -16,7 +16,7 @@ const Channel = () => {
       {/* SideNav */}
       <div
         className={`w-1/6 transition-transform duration-300 ease-in ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full hidden"
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <SideNav />
@@ -26,14 +26,14 @@ const Channel = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <h1 className="bg-gray-300 text-xl font-extrabold p-2">Channel</h1>
+        <h1 className="bg-gray-300 text-xl font-extrabold p-2">Tax</h1>
         <div className="bg-gray-300 flex flex-col p-4">
-          <ChannelHandler />
-          <ChannelTable />
+          <TaxHeader />
+          <TaxList />
         </div>
       </div>
     </div>
   );
 };
 
-export default Channel;
+export default Tax;

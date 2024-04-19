@@ -155,13 +155,13 @@ const SideNav = () => {
 
             <ul className={`sub-menu ${showExtraPages ? "block" : "hidden"}`}>
               <li className="menu-item">
-                <a href="pages-starter.html" className="menu-link">
+                <a href="/settings" className="menu-link">
                   <span className="menu-dot"></span>
                   <span className="menu-text">Currency List</span>
                 </a>
               </li>
               <li className="menu-item">
-                <a href="pages-invoice.html" className="menu-link">
+                <a href="/tax" className="menu-link">
                   <span className="menu-dot"></span>
                   <span className="menu-text">Tax List</span>
                 </a>

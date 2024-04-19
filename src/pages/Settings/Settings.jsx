@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SideNav from "../Dashboard/SideNav";
 import Header from "../Header/Header";
+import CurrencyList from "./CurrencyList";
+import CurrencyHeader from "./CurrencyHandler";
 
 const Settings = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -24,7 +26,11 @@ const Settings = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <div className="">Settings</div>
+        <h1 className="bg-gray-300 text-xl font-extrabold p-2">Settings</h1>
+        <div className="bg-gray-300 flex flex-col p-4">
+          <CurrencyHeader />
+          <CurrencyList />
+        </div>
       </div>
     </div>
   );
