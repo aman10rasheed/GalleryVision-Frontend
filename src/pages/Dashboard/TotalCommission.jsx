@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TotalCommission = () => {
   return (
-    <div className="rounded-lg border border-stroke bg-blue-gray-100 py-6 px-7 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="rounded-lg border border-stroke bg-card py-6 px-7 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div className="flex h-11 w-11 items-center justify-center rounded-full bg-meta-10 dark:bg-gray-200">
         {/* Increase icon size by setting size prop and change color using className */}
         <FontAwesomeIcon

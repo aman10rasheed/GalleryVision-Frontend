@@ -12,7 +12,7 @@ const YourComponent = () => {
   return (
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 mb-6 ">
       <div className="card">
-        <div className="p-5  bg-blue-gray-100">
+        <div className="p-5  bg-card">
           <div className="flex justify-between items-center">
             <h4 className="card-title mb-4">Daily Sales</h4>
           </div>
@@ -37,7 +37,7 @@ const YourComponent = () => {
       </div>
 
       <div className="card">
-        <div className="p-5 bg-blue-gray-100">
+        <div className="p-5 bg-card">
           <div className="flex justify-between items-center">
             <h4 className="card-title mb-4">Statistics</h4>
 
@@ -94,7 +94,7 @@ const YourComponent = () => {
       </div>
 
       <div className="card">
-        <div className="p-5 bg-blue-gray-100">
+        <div className="p-5 bg-card">
           <div className="flex justify-between items-center">
             <h4 className="card-title mb-4">Total Revenue</h4>
 

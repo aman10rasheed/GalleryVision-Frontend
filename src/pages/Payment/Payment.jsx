@@ -24,7 +24,7 @@ const Payment = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <h1 className="bg-gray-300 text-xl font-extrabold p-2">Payment</h1>
+        <h1 className="bg-background text-xl font-extrabold p-2">Payment</h1>
         <div className="">Payment</div>
       </div>
     </div>

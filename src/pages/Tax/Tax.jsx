@@ -26,8 +26,8 @@ const Tax = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <h1 className="bg-gray-300 text-xl font-extrabold p-2">Tax</h1>
-        <div className="bg-gray-300 flex flex-col p-4">
+        <h1 className="bg-background text-xl font-extrabold p-2">Tax</h1>
+        <div className="bg-background flex flex-col p-4">
           <TaxHeader />
           <TaxList />
         </div>

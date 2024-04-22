@@ -37,13 +37,13 @@ const CSVupload = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <h1 className="bg-gray-300 text-xl font-extrabold p-2 border-none">
+        <h1 className="bg-background text-xl font-extrabold p-2 border-none">
           Upload CSV
         </h1>
-        <div className="flex items-center justify-center min-h-screen bg-gray-300">
+        <div className="flex items-center justify-center min-h-screen bg-background">
           <div className="flex flex-col  md:flex-row gap-6">
             {/* Channel CSV Upload */}
-            <div className="bg-blue-gray-100 shadow-md rounded-lg p-8 flex flex-col items-center">
+            <div className="bg-card shadow-md rounded-lg p-8 flex flex-col items-center">
               <div className="mb-4">
                 <FontAwesomeIcon
                   icon={faFileCsv}
@@ -56,7 +56,7 @@ const CSVupload = () => {
               <input
                 type="file"
                 accept=".csv"
-                className="mb-4 py-2 px-4 border border-gray-300 rounded-md"
+                className="mb-4 py-2 px-4 border border-babg-background rounded-md"
                 onChange={handleChannelFileChange}
               />
               <p className="text-gray-600 text-sm">
@@ -65,7 +65,7 @@ const CSVupload = () => {
             </div>
 
             {/* Music CSV Upload */}
-            <div className="bg-blue-gray-100 shadow-md rounded-lg p-8 flex flex-col items-center">
+            <div className="bg-card shadow-md rounded-lg p-8 flex flex-col items-center">
               <div className="mb-4">
                 <FontAwesomeIcon
                   icon={faFileCsv}
@@ -76,7 +76,7 @@ const CSVupload = () => {
               <input
                 type="file"
                 accept=".csv"
-                className="mb-4 py-2 px-4 border border-gray-300 rounded-md"
+                className="mb-4 py-2 px-4 border border-babg-background rounded-md"
                 onChange={handleMusicFileChange}
               />
               <p className="text-gray-600 text-sm">

@@ -13,7 +13,7 @@ const Header = ({ toggleSidebar }) => {
   };
 
   return (
-    <div className="app-header flex items-center justify-between px-5 gap-4 md:justify-between border-none bg-blue-gray-100">
+    <div className="app-header flex items-center justify-between px-5 gap-4 md:justify-between border-none bg-card">
       {/* Brand Logo */}
       <a href="index.html" className="logo-box">
         <img
