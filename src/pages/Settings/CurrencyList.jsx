@@ -39,7 +39,7 @@ const CurrencyList = () => {
 
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full bg-card border rounded-lg overflow-hidden">
+      <table className="min-w-full bg-white border rounded-lg overflow-hidden">
         <thead className="bg-gray-200">
           <tr>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">

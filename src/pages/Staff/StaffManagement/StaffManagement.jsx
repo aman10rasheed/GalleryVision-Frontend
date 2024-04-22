@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import SideNav from "../Dashboard/SideNav";
-import Header from "../Header/Header";
+import SideNav from "../../Dashboard/SideNav";
+import Header from "../../Header/Header";
 
-const Invoice = () => {
+const StaffManagement = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -24,11 +24,13 @@ const Invoice = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
-        <h1 className="bg-background text-xl font-extrabold p-2">Invoice</h1>
-        <div className="">Invoice</div>
+        <h1 className="bg-background text-xl font-extrabold p-2">
+          StaffManagement
+        </h1>
+        <div className="">Staff Management</div>
       </div>
     </div>
   );
 };
 
-export default Invoice;
+export default StaffManagement;

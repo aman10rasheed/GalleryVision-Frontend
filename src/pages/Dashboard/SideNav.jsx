@@ -124,13 +124,13 @@ const SideNav = () => {
 
             <ul className={`sub-menu ${showStaffMenu ? "block" : "hidden"}`}>
               <li className="menu-item">
-                <a href="staff-log.html" className="menu-link">
+                <a href="/staffLog" className="menu-link">
                   <span className="menu-dot"></span>
                   <span className="menu-text">Staff Log</span>
                 </a>
               </li>
               <li className="menu-item">
-                <a href="staff-management.html" className="menu-link">
+                <a href="staffManagement" className="menu-link">
                   <span className="menu-dot"></span>
                   <span className="menu-text">Staff Management</span>
                 </a>

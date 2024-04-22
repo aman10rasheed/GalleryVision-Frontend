@@ -13,6 +13,8 @@ import Invoice from "./pages/Invoice/Invoice";
 import Report from "./pages/Report/Report";
 import Settings from "./pages/Settings/Settings";
 import Tax from "./pages/Tax/Tax";
+import StaffLog from "./pages/Staff/StaffLog/StaffLog";
+import StaffManagement from "./pages/Staff/StaffManagement/StaffManagement";
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
         <Route path="/report" element={<Report />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/tax" element={<Tax />} />
+        <Route path="/staffLog" element={<StaffLog />} />
+        <Route path="/staffManagement" element={<StaffManagement />} />
+
         {/* Add more routes here */}
       </Routes>
     </Router>
