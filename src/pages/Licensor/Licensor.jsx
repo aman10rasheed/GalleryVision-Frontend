@@ -1,51 +1,45 @@
 import React, { useState } from "react";
 import SideNav from "../Dashboard/SideNav";
 import Header from "../Header/Header";
-import InvoiceTable from "./InvoiceTable";
-import InvoiceHeader from "./InvoiceHeader";
+import LicensorHeader from "./LicensorHeader";
+import LicensorTable from "./LicensorTable";
 
-const Invoice = () => {
+const Licensor = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  // Sample invoice data
-  const invoices = [
+  const sampleData = [
     {
-      id: 1,
-      licensorId: "Licensor 1",
+      licensorId: "LIC001",
       type: "Type A",
-      date: "2024-04-20",
+      date: "April 1, 2024",
       status: "paid",
     },
     {
-      id: 2,
-      licensorId: "Licensor 2",
+      licensorId: "LIC002",
       type: "Type B",
-      date: "2024-04-21",
-      status: "unpaid",
+      date: "March 28, 2024",
+      status: "pending",
     },
     {
-      id: 3,
-      licensorId: "Licensor 3",
-      type: "Type C",
-      date: "2024-04-22",
+      licensorId: "LIC003",
+      type: "Type A",
+      date: "February 15, 2024",
       status: "paid",
     },
     {
-      id: 4,
-      licensorId: "Licensor 4",
-      type: "Type D",
-      date: "2024-04-23",
-      status: "unpaid",
+      licensorId: "LIC004",
+      type: "Type C",
+      date: "January 25, 2024",
+      status: "pending",
     },
     {
-      id: 5,
-      licensorId: "Licensor 5",
-      type: "Type E",
-      date: "2024-04-24",
+      licensorId: "LIC005",
+      type: "Type B",
+      date: "December 10, 2023",
       status: "paid",
     },
   ];
@@ -65,14 +59,16 @@ const Invoice = () => {
         {/* Header */}
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
+        <h1 className="bg-background text-xl font-extrabold p-2">Licensor</h1>
         <div className="p-4">
-          <h1 className="bg-background text-xl font-extrabold p-2">Invoice</h1>
-          <InvoiceHeader onCreateNewInvoice={() => {}} />
-          <InvoiceTable invoices={invoices} />
+          <LicensorHeader
+            onCreateNewLicensor={() => console.log("Creating a new licensor")}
+          />
+          <LicensorTable licenses={sampleData} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Invoice;
+export default Licensor;

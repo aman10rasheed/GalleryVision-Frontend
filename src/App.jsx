@@ -15,6 +15,8 @@ import Settings from "./pages/Settings/Settings";
 import Tax from "./pages/Tax/Tax";
 import StaffLog from "./pages/Staff/StaffLog/StaffLog";
 import StaffManagement from "./pages/Staff/StaffManagement/StaffManagement";
+import Licensor from "./pages/Licensor/Licensor";
+import Music from "./pages/Music_Partner/MusicPartner";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <Route path="/tax" element={<Tax />} />
         <Route path="/staffLog" element={<StaffLog />} />
         <Route path="/staffManagement" element={<StaffManagement />} />
+        <Route path="/licensor" element={<Licensor />} />
+        <Route path="/music" element={<Music />} />
 
         {/* Add more routes here */}
       </Routes>

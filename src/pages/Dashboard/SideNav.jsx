@@ -74,6 +74,17 @@ const SideNav = () => {
             </a>
           </li>
           <li className="menu-item hover:bg-gray-100">
+            <a href="/licensor" className="menu-link waves-effect">
+              <span className="menu-icon">
+                <i
+                  className="ph-duotone ph-list"
+                  style={{ color: "#dc3545" }}
+                ></i>
+              </span>
+              <span className="menu-text"> Licensor </span>
+            </a>
+          </li>
+          <li className="menu-item hover:bg-gray-100">
             <a href="/channel" className="menu-link waves-effect">
               <span className="menu-icon">
                 <i
@@ -104,6 +115,17 @@ const SideNav = () => {
                 ></i>
               </span>
               <span className="menu-text"> Invoice </span>
+            </a>
+          </li>
+          <li className="menu-item hover:bg-gray-100">
+            <a href="/music" className="menu-link waves-effect">
+              <span className="menu-icon">
+                <i
+                  className="ph-duotone ph-users"
+                  style={{ color: "#20c997" }}
+                ></i>
+              </span>
+              <span className="menu-text"> Music Partner </span>
             </a>
           </li>
           <li className="menu-item hover:bg-gray-100">

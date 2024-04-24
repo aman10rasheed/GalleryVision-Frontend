@@ -25,6 +25,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "apexcharts": "3.27.2",
     "chart.js": "^4.4.2",
+    "date-fns": "^3.6.0",
     "dayjs": "^1.11.5",
     "formik": "^2.4.5",
     "fullcalendar": "^6.1.6",

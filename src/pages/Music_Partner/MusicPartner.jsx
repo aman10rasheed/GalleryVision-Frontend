@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import SideNav from "../Dashboard/SideNav";
 import Header from "../Header/Header";
-import PaymentHeader from "./PaymentHeader";
-import PaymentTable from "./PaymentTable";
+import MusicTable from "./MusicTable";
+import MusicHeader from "./MusicHeader";
 
-const Payment = () => {
+const Music = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -27,13 +27,15 @@ const Payment = () => {
         <Header toggleSidebar={toggleSidebar} />
         {/* Content */}
         <div className="p-4">
-          <h1 className="bg-background text-xl font-extrabold p-2">Payment</h1>
-          <PaymentHeader />
-          <PaymentTable />
+          <h1 className="bg-background text-xl font-extrabold p-2">
+            Music Partner
+          </h1>
+          <MusicHeader />
+          <MusicTable />
         </div>
       </div>
     </div>
   );
 };
 
-export default Payment;
+export default Music;
