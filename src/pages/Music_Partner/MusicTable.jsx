@@ -1,7 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLock, faDownload } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faEdit,
+  faTrash,
+  faFileInvoice,
+} from "@fortawesome/free-solid-svg-icons";
 const MusicTable = () => {
   const sampleLicenses = [
     {
@@ -67,12 +70,24 @@ const MusicTable = () => {
               <td className="px-6 py-4 whitespace-nowrap">{license.name}</td>
               <td className="px-6 py-4 whitespace-nowrap">{license.email}</td>
               <td className="px-6 py-4 whitespace-nowrap">{license.status}</td>
-              <td className="px-6 py-4 whitespace-nowrap text-center">
+              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium flex space-x-2">
                 <button
-                  className="text-gray-600 hover:text-gray-900"
-                  title="Lock"
+                  className="text-blue-600 hover:text-blue-900"
+                  title="Edit"
                 >
-                  <FontAwesomeIcon icon={faLock} />
+                  <FontAwesomeIcon icon={faEdit} />
+                </button>
+                <button
+                  className="text-red-600 hover:text-red-900"
+                  title="Delete"
+                >
+                  <FontAwesomeIcon icon={faTrash} />
+                </button>
+                <button
+                  className="text-green-600 hover:text-green-900"
+                  title="Invoice"
+                >
+                  <FontAwesomeIcon icon={faFileInvoice} />
                 </button>
               </td>
             </tr>
