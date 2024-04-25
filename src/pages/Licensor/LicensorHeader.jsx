@@ -7,12 +7,14 @@ import {
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { format, addMonths } from "date-fns";
+import { useNavigate } from "react-router-dom";
 
 const LicensorHeader = ({ onCreateNewLicensor }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("");
   const [selectedMonth, setSelectedMonth] = useState(new Date());
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
@@ -37,12 +39,16 @@ const LicensorHeader = ({ onCreateNewLicensor }) => {
     addMonths(new Date(), -i)
   );
 
+  const handleCreateNewLicensor = () => {
+    navigate("/createLicensor"); // Use navigate instead of history.push
+  };
+
   return (
     <div className="flex justify-between items-center mb-4">
       <div className="flex items-center space-x-4">
         <button
           className="px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
-          onClick={() => onCreateNewLicensor()}
+          onClick={handleCreateNewLicensor}
         >
           <FontAwesomeIcon icon={faPlus} className="mr-2" />
           Create New Licensor

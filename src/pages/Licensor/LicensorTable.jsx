@@ -4,6 +4,8 @@ import {
   faLock,
   faDownload,
   faFileInvoice,
+  faEdit,
+  faTrashAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 const LicensorTable = ({ licenses }) => {
@@ -45,6 +47,21 @@ const LicensorTable = ({ licenses }) => {
     },
   ];
 
+  const handleEdit = (licensorId) => {
+    // Handle edit action here
+    console.log("Edit:", licensorId);
+  };
+
+  const handleDelete = (licensorId) => {
+    // Handle delete action here
+    console.log("Delete:", licensorId);
+  };
+
+  const handleInvoice = (licensorId) => {
+    // Handle invoice action here
+    console.log("Invoice:", licensorId);
+  };
+
   return (
     <div className="overflow-x-auto">
       <table className="min-w-full bg-white border rounded-lg overflow-hidden">
@@ -63,10 +80,7 @@ const LicensorTable = ({ licenses }) => {
               Type
             </th>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
-              Date
-            </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
-              Action
+              Actions
             </th>
           </tr>
         </thead>
@@ -79,11 +93,25 @@ const LicensorTable = ({ licenses }) => {
               <td className="px-6 py-4 whitespace-nowrap">{license.name}</td>
               <td className="px-6 py-4 whitespace-nowrap">{license.email}</td>
               <td className="px-6 py-4 whitespace-nowrap">{license.type}</td>
-              <td className="px-6 py-4 whitespace-nowrap">{license.date}</td>
-              <td className="px-6 py-4 whitespace-nowrap text-center">
+              <td className="px-6 py-4 whitespace-nowrap">
+                <button
+                  className="text-gray-600 hover:text-gray-900 mr-2"
+                  title="Edit"
+                  onClick={() => handleEdit(license.licensorId)}
+                >
+                  <FontAwesomeIcon icon={faEdit} />
+                </button>
+                <button
+                  className="text-gray-600 hover:text-gray-900 mr-2"
+                  title="Delete"
+                  onClick={() => handleDelete(license.licensorId)}
+                >
+                  <FontAwesomeIcon icon={faTrashAlt} />
+                </button>
                 <button
                   className="text-gray-600 hover:text-gray-900"
                   title="Invoice"
+                  onClick={() => handleInvoice(license.licensorId)}
                 >
                   <FontAwesomeIcon icon={faFileInvoice} />
                 </button>

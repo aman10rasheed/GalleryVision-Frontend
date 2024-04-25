@@ -62,6 +62,12 @@ const InvoiceHeader = ({ onCreateNewInvoice }) => {
           <FontAwesomeIcon icon={faPlus} className="mr-2" />
           Create New Invoice
         </button>
+        <button
+          className="px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
+          onClick={() => onCreateNewInvoice()}
+        >
+          Statement
+        </button>
         <div className="relative">
           <input
             type="text"

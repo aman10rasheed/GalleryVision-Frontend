@@ -8,26 +8,31 @@ const PaymentTable = ({ payments }) => {
       date: "April 1, 2024",
       type: "Type A",
       amount: "$1000",
+      licensorID: "LIC001",
     },
     {
       date: "March 28, 2024",
       type: "Type B",
       amount: "$500",
+      licensorID: "LIC002",
     },
     {
       date: "February 15, 2024",
       type: "Type A",
       amount: "$700",
+      licensorID: "LIC003",
     },
     {
       date: "January 25, 2024",
       type: "Type C",
       amount: "$1200",
+      licensorID: "LIC004",
     },
     {
       date: "December 10, 2023",
       type: "Type B",
       amount: "$800",
+      licensorID: "LIC005",
     },
   ];
 
@@ -53,7 +58,10 @@ const PaymentTable = ({ payments }) => {
               />
             </th>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
-              Date
+              Licensor ID
+            </th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
+              Invoice Generated Date
             </th>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
               Type
@@ -77,8 +85,15 @@ const PaymentTable = ({ payments }) => {
                   onChange={() => toggleRowSelection(index)}
                 />
               </td>
+              <td className="px-6 py-4 whitespace-nowrap">
+                {payment.licensorID}
+              </td>
               <td className="px-6 py-4 whitespace-nowrap">{payment.date}</td>
-              <td className="px-6 py-4 whitespace-nowrap">{payment.type}</td>
+              <td className="px-6 py-4 whitespace-nowrap">
+                {payment.type === "Type A" || payment.type === "Type B"
+                  ? "Music"
+                  : "Channel"}
+              </td>
               <td className="px-6 py-4 whitespace-nowrap">{payment.amount}</td>
               <td className="px-6 py-4 whitespace-nowrap text-center">
                 <button

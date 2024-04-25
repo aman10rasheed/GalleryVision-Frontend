@@ -17,6 +17,7 @@ import StaffLog from "./pages/Staff/StaffLog/StaffLog";
 import StaffManagement from "./pages/Staff/StaffManagement/StaffManagement";
 import Licensor from "./pages/Licensor/Licensor";
 import Music from "./pages/Music_Partner/MusicPartner";
+import CreateLicensor from "./pages/Licensor/CreateLicensor/CreateLicensor";
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
         <Route path="/staffManagement" element={<StaffManagement />} />
         <Route path="/licensor" element={<Licensor />} />
         <Route path="/music" element={<Music />} />
-
+        <Route path="/createLicensor" element={<CreateLicensor />} />
         {/* Add more routes here */}
       </Routes>
     </Router>

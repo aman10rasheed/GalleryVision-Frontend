@@ -12,10 +12,7 @@ const InvoiceTable = ({ invoices }) => {
               Licensor ID
             </th>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
-              Type
-            </th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
-              Date
+              Asset
             </th>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
               Status
@@ -35,10 +32,9 @@ const InvoiceTable = ({ invoices }) => {
                 {invoice.licensorId}
               </td>
               <td className="px-6 py-4 whitespace-nowrap">{invoice.type}</td>
-              <td className="px-6 py-4 whitespace-nowrap">{invoice.date}</td>
               <td className="px-6 py-4 whitespace-nowrap">
                 <span
-                  className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                  className={`inline-flex px-2.5 py-0.5 rounded-full text-xs font-medium ${
                     invoice.status === "paid"
                       ? "bg-green-100 text-green-800"
                       : "bg-red-100 text-red-800"
@@ -47,7 +43,7 @@ const InvoiceTable = ({ invoices }) => {
                   {invoice.status}
                 </span>
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-center">
+              <td className="px-6 py-4 whitespace-nowrap">
                 <button
                   className="text-gray-600 hover:text-gray-900"
                   title="Lock"
@@ -55,7 +51,7 @@ const InvoiceTable = ({ invoices }) => {
                   <FontAwesomeIcon icon={faLock} />
                 </button>
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-center">
+              <td className="px-6 py-4 whitespace-nowrap">
                 <button
                   className="text-gray-600 hover:text-gray-900"
                   title="Download"
